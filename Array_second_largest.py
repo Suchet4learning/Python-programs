@@ -21,10 +21,18 @@ def second_largest(arr,n):
         
     return ans
 
-print("Enter integer values as Array input: ")
-a = list(map(int,input().split()))
-print(second_largest(a,len(a)))
-
+def main():
+    print("Enter integer values as Array input: ")
+    a = list(map(int,input().split()))
+    n = second_largest(a,len(a))
+    if n>1:
+        print("The second largest element of the array is :",n)
+    else:
+        print("The array has only one element. ", n)
+    return 0
+    
+if __name__ == '__main__':
+    main()
 
 
 
